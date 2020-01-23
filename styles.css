@@ -1,0 +1,52 @@
+body {
+    background-color: #4aaaa5;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    background-color: #196460;
+    padding: 3rem;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pwd-box {
+    background-color: #fff;
+    color: black;
+    padding: 1rem;
+    justify-content: center;
+    height: 2rem;
+    width: 350px;
+    word-break: break-all;
+    align-items: center;
+    display: flex;
+}
+
+.column-format {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 3rem;
+    row-gap: 1rem;
+}
+
+.btn {
+    grid-column: span 2;
+    background-color: transparent;
+    color: #fff;
+    padding: .5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ffffff33;
+}
