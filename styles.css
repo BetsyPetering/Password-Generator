@@ -1,5 +1,5 @@
 body {
-    background-color: #f8f6f6;
+    background-color: #4aaaa5;
     color: black;
     display: flex;
     justify-content: center;
@@ -12,7 +12,6 @@ body {
     align-self: center;
     width: max-content;
     padding: 3rem;
-    border: 2px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
