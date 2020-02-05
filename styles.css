@@ -7,22 +7,30 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.container {
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
     background-color: #ffffff;
-    align-self: center;
+    /* align-self: center; */
     width: max-content;
     padding: 3rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     flex-direction: column;
 }
 
-.showPW {
-    margin: 2em;
-    font-size: 1em;
+.alert {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
-
 
 .btn {
     grid-column: span 2;
