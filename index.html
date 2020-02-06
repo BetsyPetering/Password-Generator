@@ -1,86 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <script src="script.js" defer></script>
     <link rel="stylesheet" type="text/css" href="Assets/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 
-    <title>Password Generator</title>
+    <title>Password Creator</title>
 
 </head>
-<!--Font Awesome for clipboard:  <i class="fas fa-clipboard"></i> -->
 
 <body>
 
-    <div class="container">
+<div class="container">
+    <h2>Password Generator</h2>
 
-        <h1>Password Generator</h1>
-        <h2>Generate a Password</h2>
+    <!-- Password will land here -->
+	<div class="result-container">
+		<span id="finalWord">Password</span>
+		</div>
+	<div class="settings">
+		<div class="setting">
+			<label>Password length</label>
+			<input type="number" id="length" min='8' max='128' />
+		</div>
+		<div class="setting">
+			<label>Include Uppercase Letters?</label> 
+			<input type="checkbox" id="upper" checked />
+		</div>
+		<div class="setting">
+			<label>Include Lowercase Letters?</label> 
+			<input type="checkbox" id="lower" checked />
+		</div>
+		<div class="setting">
+			<label>Include Numbers?</label> 
+			<input type="checkbox" id="number" checked />
+		</div>
+		<div class="setting">
+			<label>Include Symbols?</label> 
+			<input type="checkbox" id="symbol" checked />
+		</div>
+	</div>
+	<button class="btn btn-large" id="generate">
+		Generate Password
+	</button>
+</div>
 
-        <form>
-
-            <div class="col" class="form-check">
-
-                <div class="alert alert-info" role="alert">
-                    <label type="text">Generate Password</label>
-                </div>
-
-                <label type="number">Length (from 8 to 128 characters)</label>
-                <input type="number" min="8" max="128" id="length">
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="input-symbol">
-                    <label class="form-check-label" for="symbol">
-                        Symbols
-                    </label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="input-number">
-                    <label class="form-check-label" for="number">
-                        Numbers
-                    </label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="input-upper">
-                    <label class="form-check-label" for="upperCase">
-                        Upper Case Letters
-                    </label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="input-lower">
-                    <label class="form-check-label" for="lowerCase">
-                        Lower Case Letters
-                    </label>
-                </div>
-
-            </div>
-
-            <div class="buttons">
-                <!--Red button-->
-                <button type="submit" id="make" class="btn btn-danger" class="rounded-lar">Make a Password</button>
-                <!--Gray button-->
-                <button type="submit" id="copy" class="btn btn-secondary" class="rounded-lar">Copy to
-                    Clipboard</button>
-
-            </div>
-
-
-        </form>
-
-    </div>
 
 </body>
-
 </html>
